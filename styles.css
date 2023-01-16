@@ -1,0 +1,104 @@
+.meme {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    position: relative;
+    margin: 1rem;
+}
+
+p {
+    position: absolute;
+    margin: 10px auto;
+    padding: 0 10px;
+    font-family: impact, arial;
+    font-size: 3rem;
+    text-transform: uppercase;
+    /* https: //stackoverflow.com/questions/4772906/css-is-it-possible-to-add-a-black-outline-around-each-character-in-text */
+    /* I looked up black outline for white text */
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.topText {
+    top: 0;
+}
+
+.bottomText {
+    bottom: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.deleteButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 1px 3px 2px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.deleteButton:hover {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.meme button {
+    display: none;
+}
+
+.meme:hover button {
+    display: block;
+}
+
+body {
+    background-color: #1d3557;
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    font-family: impact;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+#result {
+    text-align: center;
+    background-color: rgba(186, 209, 223, 0.5);
+    margin: 0 3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    min-height: 570px;
+}
+
+#inputSection {
+    position: relative;
+    width: 100%;
+    min-height: 25vh;
+    margin-top: 2rem;
+}
+
+#inputForm {
+    position: absolute;
+    background-color: #457b9d;
+    width: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+    padding: 2rem 2rem 1.5rem 2rem;
+    text-align: center;
+}
+
+/* footer {
+    height: 3rem;
+} */
